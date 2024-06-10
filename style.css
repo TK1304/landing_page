@@ -1,89 +1,139 @@
-body {
-    background-image:url("white\ mm.jpg");
-    font-size: large;
-    font-family: Arial, sans-serif;
-    background-color:gold;
-    margin: 0;
-    padding: 0;
-}
-.header {
-    color: rgb(151, 198, 22);
-    background-color: rgb(43, 43, 53);
-    padding: 10px;
-    text-align: center;
-}
-.event-info {
-    color:rgb(22, 9, 9);
-    font-size: 24px;
-    margin-bottom: 10px;
-    background-color: rgb(16, 12, 46);
-    padding: 20px;
-    text-align: center;
-}
-.event-info h2 {
-    color:rgb(17, 8, 8);
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.event-info p {
-   color: green;
-    padding: 20px;
-    text-align: center;
-    color:grey;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.event-date {
-    color: rgb(28, 164, 87);
-       color:rgb(47, 30, 30);
-    padding: 20px;
-    text-align: center;
-}
-.event-date h2 {
-   color:rgb(45, 9, 9);
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.event-date p {
-    color: green;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.event-image {
-    padding: 20px;
-    text-align: center;
-}
-
-.event-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.footer {
-    background-color: #003366;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-li::marker{
-    content: "✅";
-}
-form :hover{
-    color:aliceblue;
-    background-color: rgb(62, 225, 21);
-    color:grey;
-    font-size: 24px;
-}
-li{
-    font-family: Arial, sans-serif;
-    color:rgb(13, 6, 6);
-    padding: 20px;
-    text-align: center;
-}  
-#south{
-     background-color:rgb(142, 35, 35);
-}
-.event-information{
-    color: rgb(18, 173, 72);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><strong>LANDING PAGE FOR FOOD FESTIVAL EVENT</strong></title>
+    <link rel="icon" href="food festival.jpg" type="image/jpg"></link>
+    <style>
+        body {
+            background-image: url("white\ mm.jpg");
+            font-size: large;
+            font-family: Arial, sans-serif;
+            background-color: gold;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            color: black;
+            background: linear-gradient(to right, gold, lightgoldenrodyellow);
+            padding: 10px;
+            text-align: center;
+        }
+        .header a {
+            color: black; /* Ensure the links in the header are black */
+            text-decoration: none;
+        }
+        .event-info {
+            color: black; /* Ensure the event info text is black */
+            font-size: 24px;
+            margin-bottom: 10px;
+            background-color: rgb(16, 12, 46);
+            padding: 20px;
+            text-align: center;
+        }
+        .event-info h2 {
+            color: black; /* Ensure the event info heading is black */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .event-info p {
+            color: grey;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .event-date {
+            color: black; /* Ensure the event date text is black */
+            padding: 20px;
+            text-align: center;
+        }
+        .event-date h2 {
+            color: black; /* Ensure the event date heading is black */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .event-date p {
+            color: green;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .event-image {
+            padding: 20px;
+            text-align: center;
+        }
+        .event-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        li::marker {
+            content: "✅";
+        }
+        form:hover {
+            background-color: rgb(62, 225, 21);
+            color: grey;
+            font-size: 24px;
+        }
+        li {
+            font-family: Arial, sans-serif;
+            color: black; /* Ensure the list items are black */
+            padding: 20px;
+            text-align: center;
+        }
+        #south {
+            background-color: rgb(142, 35, 35);
+        }
+        .event-information {
+            color: black; /* Ensure the event information text is black */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GRAND FOOD FESTIVAL EVENT</h1>
+        <header id="header">
+            <h2>
+                <li><a href="#event-information">Event information</a></li>
+                <li><a href="#event-date">Event date</a></li>
+                <li><a href="#south">Food list</a></li>
+                <li><a href="#phoneno">Contact</a></li>
+            </h2>
+        </header>
+    </div>
+    <div class="event-information">
+        <h2 id="event-information">Event Information</h2>
+        <p> Welcome to the grand 4-day event at the beautiful location of Steel city of Tamilnadu Salem. We invite you to explore the best of South Indian Foods from the state of Tamil Nadu.</p>
+    </div>
+    <div class="event-date">
+        <h2 id="event-date">Event Date</h2>
+        <p>1st January 2024</p>
+    </div>
+    <div class="event-image">
+        <img src="food festival.jpg" alt="Food Festival Event">
+        <div class="south indian food"></div>
+        <ul id="south"> SOUTH INDIAN FOODS
+            <li>Dosa variety.</li>
+            <li>Idly variety.</li>
+            <li>Pongal variety.</li>
+            <li>Rice variety.</li>
+            and enjoy with a lot of South Indian food varieties in the event and join us.....! and enjoy Delicious food in one place...!
+        </ul>
+    </div>
+    <center>
+        <form action="https://docs.google.com/forms/d/1qu9GuoSWT638EL1LzEDTYkfd2KDVj4-nAidiHcZRw-0/edit">
+            <input type="submit" value="REGISTER HERE" />
+        </form>
+    </center>
+    <div class="footer">
+        <p id="phoneno">Contact: +91-93*******</p>
+        <span>&copy; All copyrights are reserved to the food festival event-2024</span>
+    </div>
+</body>
+</html>
